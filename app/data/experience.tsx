@@ -9,9 +9,9 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "Senior .NET / Angular Developer",
-    company: "Company Name",
-    period: "2023 — Present",
+    role: ".NET / Blazor Server / Angular Developer",
+    company: "Connectus Infoway Pvt Ltd",
+    period: "2022 — Present",
     location: "India",
     description:
       "Developing and maintaining scalable business applications using .NET, Angular, SQL Server, and modern software development practices.",
@@ -25,10 +25,10 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: ".NET / Angular Developer",
-    company: "Company Name",
-    period: "2021 — 2023",
-    location: "India",
+    role: "Junior .NET Framework / Angular Developer",
+    company: "Mehta websolutions",
+    period: "2020 — 2022",
+    location: "Jamnagar,Gujarat,India",
     description:
       "Built business-focused web applications and backend services while working across frontend, backend, and database layers.",
     responsibilities: [
@@ -41,19 +41,17 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: "Software Developer",
-    company: "Company Name",
-    period: "2020 — 2021",
-    location: "India",
+    role: "Store Incharge",
+    company: "Kalyans' hotels",
+    period: "2018 — 2020",
+    location: "Khambhakiya,Gujarat,India",
     description:
-      "Worked on web and business applications while gaining hands-on experience across the Microsoft development ecosystem.",
+      "Worked as Store incharge in Hotels and Green coal industries over 1.5 years of experience.",
     responsibilities: [
-      "Developed application features using C# and .NET.",
-      "Created frontend functionality using Angular.",
-      "Worked with SQL Server and application data.",
-      "Implemented CRUD functionality and business logic.",
-      "Debugged issues and supported existing applications.",
-      "Worked with development teams to deliver application features.",
+      "Managed stock receiving, storage, issuing, and maintaining accurate inventory records.",
+      "Monitored stock levels and ensured timely availability of materials.",
+      "Maintained proper documentation and coordinated with relevant departments for smooth store operations.",
+      "Experienced in stock checking, inventory control, and maintaining organized warehouse/store facilities.",
     ],
   },
 ];

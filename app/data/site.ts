@@ -1,4 +1,4 @@
-const exp = "4+";
+const exp = "6+";
 
 export const siteConfig = {
   personal: {
@@ -40,12 +40,12 @@ export const siteConfig = {
   },
 
   seo: {
-    title: "John Son | Full-Stack .NET & Angular Developer",
+    title: "Jatin Joshi | Full-Stack .NET & Angular Developer",
 
-    description: `John Son is a Full-Stack Developer with ${exp} years of experience specializing in .NET, Angular, Blazor, SQL Server, Ionic, and business application development.`,
+    description: `Jatin Joshi is a Full-Stack Developer with ${exp} years of experience specializing in .NET, Angular, Blazor, SQL Server, Ionic, and business application development.`,
 
     keywords: [
-      "John Son",
+      "Jatin Joshi",
       ".NET Developer",
       "Angular Developer",
       "Full Stack Developer",
