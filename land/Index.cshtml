@@ -1,0 +1,517 @@
+﻿@{
+    ViewData["Title"] = "Law Management System";
+    Layout = "_LandingLayout";
+}
+
+<!-- Hero -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-75 g-5">
+
+            <div class="col-lg-6">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Legal Management Platform
+                </div>
+
+                <h1 class="hero-title">
+                    Manage Your Company's
+                    <span>Legal Matters</span>
+                    With Confidence
+                </h1>
+
+                <p class="hero-description">
+                    A centralized platform to manage legal cases, hearings,
+                    documents, advocates, tasks and important legal information
+                    for your organization.
+                </p>
+
+                <div class="hero-actions">
+                    <a asp-controller="Account"
+                       asp-action="Register"
+                       class="btn btn-primary btn-lg">
+                        Register Your Company
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a asp-controller="Account"
+                       asp-action="Login"
+                       class="btn btn-outline-dark btn-lg">
+                        Login to Portal
+                    </a>
+                </div>
+
+                <div class="hero-features">
+                    <span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Company-Based Access
+                    </span>
+
+                    <span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Centralized Management
+                    </span>
+
+                    <span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Organized Records
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dashboard Preview -->
+            <div class="col-lg-6">
+                <div class="dashboard-wrapper">
+
+                    <div class="dashboard-window">
+
+                        <div class="dashboard-topbar">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="dashboard-title">
+                                Law Management System
+                            </span>
+
+                            <i class="bi bi-bell"></i>
+                        </div>
+
+                        <div class="dashboard-content">
+
+                            <div class="dashboard-heading">
+                                <div>
+                                    <small>OVERVIEW</small>
+                                    <h5>Legal Dashboard</h5>
+                                </div>
+
+                                <div class="user-avatar">
+                                    A
+                                </div>
+                            </div>
+
+                            <div class="stats-grid">
+
+                                <div class="stat-card">
+                                    <div class="stat-icon blue">
+                                        <i class="bi bi-folder2-open"></i>
+                                    </div>
+                                    <div>
+                                        <small>Total Cases</small>
+                                        <strong>248</strong>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card">
+                                    <div class="stat-icon green">
+                                        <i class="bi bi-activity"></i>
+                                    </div>
+                                    <div>
+                                        <small>Active Cases</small>
+                                        <strong>136</strong>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card">
+                                    <div class="stat-icon gold">
+                                        <i class="bi bi-calendar-event"></i>
+                                    </div>
+                                    <div>
+                                        <small>Hearings</small>
+                                        <strong>18</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="dashboard-panels">
+
+                                <div class="chart-panel">
+                                    <div class="panel-header">
+                                        <strong>Case Overview</strong>
+                                        <span>This Year</span>
+                                    </div>
+
+                                    <div class="fake-chart">
+                                        <div style="height:45%"></div>
+                                        <div style="height:65%"></div>
+                                        <div style="height:52%"></div>
+                                        <div style="height:78%"></div>
+                                        <div style="height:60%"></div>
+                                        <div style="height:88%"></div>
+                                        <div style="height:72%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="hearing-panel">
+                                    <div class="panel-header">
+                                        <strong>Upcoming</strong>
+                                        <span>View All</span>
+                                    </div>
+
+                                    <div class="hearing-item">
+                                        <div class="date-box">
+                                            <strong>12</strong>
+                                            <small>SEP</small>
+                                        </div>
+
+                                        <div>
+                                            <strong>Case #LM-1024</strong>
+                                            <small>Hearing</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="hearing-item">
+                                        <div class="date-box">
+                                            <strong>15</strong>
+                                            <small>SEP</small>
+                                        </div>
+
+                                        <div>
+                                            <strong>Case #LM-1028</strong>
+                                            <small>Hearing</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <i class="bi bi-shield-check"></i>
+                        <div>
+                            <strong>Company Access</strong>
+                            <small>Organized workspace</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>Case Updated</strong>
+                            <small>Just now</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- What We Provide -->
+<section class="features-section">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <span>POWERFUL LEGAL MANAGEMENT</span>
+
+            <h2>
+                Everything You Need to Manage
+                Your Legal Matters
+            </h2>
+
+            <p>
+                Keep your organization's legal information organized,
+                accessible and easy to manage from one platform.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="bi bi-folder2-open"></i>
+                    </div>
+
+                    <h4>Case Management</h4>
+
+                    <p>
+                        Create, manage and track your company's legal
+                        cases from a centralized platform.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="feature-card">
+                    <div class="feature-icon gold">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+
+                    <h4>Hearing Management</h4>
+
+                    <p>
+                        Keep track of hearings, important dates and
+                        upcoming legal activities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+
+                    <h4>Document Management</h4>
+
+                    <p>
+                        Keep case-related documents and legal records
+                        organized and easy to access.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+
+                    <h4>Advocate Management</h4>
+
+                    <p>
+                        Maintain advocate information and associate
+                        legal representatives with cases.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <i class="bi bi-list-check"></i>
+                    </div>
+
+                    <h4>Tasks & Follow-ups</h4>
+
+                    <p>
+                        Organize legal activities, follow-ups and
+                        responsibilities efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon red">
+                        <i class="bi bi-bar-chart"></i>
+                    </div>
+
+                    <h4>Reports & Dashboard</h4>
+
+                    <p>
+                        Get a clear overview of your organization's
+                        legal workload and case status.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Company Access -->
+<section class="company-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="company-visual">
+
+                    <div class="company-circle">
+                        <i class="bi bi-building"></i>
+                    </div>
+
+                    <div class="connection connection-one"></div>
+                    <div class="connection connection-two"></div>
+                    <div class="connection connection-three"></div>
+
+                    <div class="company-node node-one">
+                        <i class="bi bi-folder"></i>
+                        <span>Cases</span>
+                    </div>
+
+                    <div class="company-node node-two">
+                        <i class="bi bi-calendar"></i>
+                        <span>Hearings</span>
+                    </div>
+
+                    <div class="company-node node-three">
+                        <i class="bi bi-file-text"></i>
+                        <span>Documents</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-label">
+                    COMPANY-WISE MANAGEMENT
+                </span>
+
+                <h2>
+                    Your Company's Legal
+                    Information in One Place
+                </h2>
+
+                <p class="section-description">
+                    Each registered organization can manage its legal
+                    information through its dedicated access to the
+                    platform.
+                </p>
+
+                <div class="check-list">
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Manage your organization's cases</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Organize legal information</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Track hearings and activities</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Access your organization's records</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- How It Works -->
+<section class="how-section">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <span>GET STARTED</span>
+
+            <h2>
+                Simple From Registration to Dashboard
+            </h2>
+
+            <p>
+                Get your organization started in just a few simple steps.
+            </p>
+        </div>
+
+        <div class="steps-wrapper">
+
+            <div class="step">
+                <div class="step-number">01</div>
+
+                <div class="step-icon">
+                    <i class="bi bi-building-add"></i>
+                </div>
+
+                <h4>Register Company</h4>
+
+                <p>
+                    Create your company account and provide the
+                    required organization information.
+                </p>
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+
+                <div class="step-icon">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                </div>
+
+                <h4>Login to Portal</h4>
+
+                <p>
+                    Sign in with your account credentials to access
+                    your organization's portal.
+                </p>
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+
+                <div class="step-icon">
+                    <i class="bi bi-speedometer2"></i>
+                </div>
+
+                <h4>Manage Your Legal Matters</h4>
+
+                <p>
+                    Access your dashboard and manage cases, hearings,
+                    documents and other legal activities.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+                <span>LAW MANAGEMENT SYSTEM</span>
+
+                <h2>
+                    Ready to Manage Your Legal Matters?
+                </h2>
+
+                <p>
+                    Register your company and start managing your
+                    organization's legal information from one platform.
+                </p>
+            </div>
+
+            <div class="cta-actions">
+
+                <a asp-controller="Account"
+                   asp-action="Register"
+                   class="btn btn-light btn-lg">
+                    Register Your Company
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a asp-controller="Account"
+                   asp-action="Login"
+                   class="cta-login">
+                    Already registered? Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
