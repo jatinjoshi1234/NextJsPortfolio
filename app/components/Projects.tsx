@@ -23,13 +23,13 @@ export default function Projects() {
               {siteConfig.projects.description}
             </p>
           </div>
-
+          {/* 
           <Link
             href="/projects"
             className="shrink-0 text-sm font-semibold text-sky-400 transition hover:text-sky-300"
           >
             View All Projects →
-          </Link>
+          </Link> */}
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">

@@ -1,8 +1,230 @@
 "use client";
 
+import { experience } from "../data/experience";
+import { projects } from "../data/projects";
 import { siteConfig } from "../data/site";
 
+const featuredProjects = projects.filter((project) => project.featured);
+
 export default function ResumePage() {
+  // const downloadResume = async () => {
+  //   const element = document.getElementById("resume-content");
+
+  //   if (!element) {
+  //     console.error("Resume element not found");
+  //     return;
+  //   }
+
+  //   try {
+  //     const html2pdf = (await import("html2pdf.js")).default;
+
+  //     // Save original styles
+  //     const originalStyle = element.getAttribute("style");
+
+  //     // Force safe colors that html2canvas understands
+  //     element.style.backgroundColor = "#ffffff";
+  //     element.style.color = "#0f172a";
+
+  //     const allElements = element.querySelectorAll("*");
+
+  //     const originalStyles = new Map<HTMLElement, string | null>();
+
+  //     allElements.forEach((node) => {
+  //       const el = node as HTMLElement;
+
+  //       originalStyles.set(el, el.getAttribute("style"));
+
+  //       const computed = window.getComputedStyle(el);
+
+  //       // Replace unsupported lab/oklch colors
+  //       if (
+  //         computed.color.includes("lab") ||
+  //         computed.color.includes("oklch")
+  //       ) {
+  //         el.style.color = "#334155";
+  //       }
+
+  //       if (
+  //         computed.backgroundColor.includes("lab") ||
+  //         computed.backgroundColor.includes("oklch")
+  //       ) {
+  //         el.style.backgroundColor = "#ffffff";
+  //       }
+
+  //       if (
+  //         computed.borderColor.includes("lab") ||
+  //         computed.borderColor.includes("oklch")
+  //       ) {
+  //         el.style.borderColor = "#e2e8f0";
+  //       }
+  //     });
+
+  //     const options: any = {
+  //       margin: [10, 10, 10, 10],
+  //       filename: `${siteConfig.personal.name}-Resume.pdf`,
+
+  //       image: {
+  //         type: "jpeg",
+  //         quality: 0.98,
+  //       },
+
+  //       html2canvas: {
+  //         scale: 2,
+  //         useCORS: true,
+  //         allowTaint: true,
+  //         backgroundColor: "#ffffff",
+
+  //         // Important for full resume
+  //         windowWidth: document.documentElement.scrollWidth,
+  //         windowHeight: document.documentElement.scrollHeight,
+
+  //         scrollX: 0,
+  //         scrollY: 0,
+  //       },
+
+  //       jsPDF: {
+  //         unit: "mm",
+  //         format: "a4",
+  //         orientation: "portrait",
+  //         compress: true,
+  //       },
+
+  //       pagebreak: {
+  //         mode: ["css", "legacy"],
+  //         avoid: ["article", "section", "h2", "h3"],
+  //       },
+  //     };
+
+  //     await html2pdf().set(options).from(element).save();
+
+  //     // Restore original styles
+  //     if (originalStyle) {
+  //       element.setAttribute("style", originalStyle);
+  //     } else {
+  //       element.removeAttribute("style");
+  //     }
+
+  //     originalStyles.forEach((style, el) => {
+  //       if (style) {
+  //         el.setAttribute("style", style);
+  //       } else {
+  //         el.removeAttribute("style");
+  //       }
+  //     });
+  //   } catch (error) {
+  //     console.error("Failed to generate PDF:", error);
+  //   }
+  // };
+
+  const downloadResume = async () => {
+    window.open("/resume.pdf", "_blank");
+    // const element = document.getElementById("resume-content");
+
+    // if (!element) {
+    //   console.error("Resume element not found");
+    //   return;
+    // }
+
+    // try {
+    //   const html2pdf = (await import("html2pdf.js")).default;
+
+    //   const originalStyle = element.getAttribute("style");
+
+    //   // Force PDF-safe colors
+    //   element.style.backgroundColor = "#ffffff";
+    //   element.style.color = "#0f172a";
+
+    //   // Store original inline styles
+    //   const allElements = element.querySelectorAll("*");
+    //   const originalStyles = new Map<HTMLElement, string | null>();
+
+    //   allElements.forEach((node) => {
+    //     const el = node as HTMLElement;
+
+    //     originalStyles.set(el, el.getAttribute("style"));
+
+    //     const computed = window.getComputedStyle(el);
+
+    //     if (
+    //       computed.color.includes("lab") ||
+    //       computed.color.includes("oklch")
+    //     ) {
+    //       el.style.color = "#334155";
+    //     }
+
+    //     if (
+    //       computed.backgroundColor.includes("lab") ||
+    //       computed.backgroundColor.includes("oklch")
+    //     ) {
+    //       el.style.backgroundColor = "#ffffff";
+    //     }
+
+    //     if (
+    //       computed.borderColor.includes("lab") ||
+    //       computed.borderColor.includes("oklch")
+    //     ) {
+    //       el.style.borderColor = "#e2e8f0";
+    //     }
+    //   });
+
+    //   const options: any = {
+    //     margin: [8, 8, 8, 8],
+
+    //     filename: `${siteConfig.personal.name}-Resume.pdf`,
+
+    //     image: {
+    //       type: "jpeg",
+    //       quality: 0.95,
+    //     },
+
+    //     html2canvas: {
+    //       scale: 2,
+    //       useCORS: true,
+    //       allowTaint: false,
+    //       backgroundColor: "#ffffff",
+
+    //       // Important
+    //       scrollX: 0,
+    //       scrollY: 0,
+
+    //       windowWidth: element.scrollWidth,
+    //     },
+
+    //     jsPDF: {
+    //       unit: "mm",
+    //       format: "a4",
+    //       orientation: "portrait",
+    //       compress: true,
+    //     },
+
+    //     pagebreak: {
+    //       mode: ["css", "legacy"],
+    //       avoid: [".experience-item", ".project-item"],
+    //     },
+    //   };
+
+    //   await html2pdf().set(options).from(element).save();
+
+    //   // Restore main element
+    //   if (originalStyle) {
+    //     element.setAttribute("style", originalStyle);
+    //   } else {
+    //     element.removeAttribute("style");
+    //   }
+
+    //   // Restore children
+    //   originalStyles.forEach((style, el) => {
+    //     if (style) {
+    //       el.setAttribute("style", style);
+    //     } else {
+    //       el.removeAttribute("style");
+    //     }
+    //   });
+    // } catch (error) {
+    //   console.error("Failed to generate PDF:", error);
+    // }
+  };
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
       {/* Resume Actions - hidden when printing */}
@@ -16,7 +238,7 @@ export default function ResumePage() {
           </a>
 
           <button
-            onClick={() => window.print()}
+            onClick={downloadResume}
             className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
             Download / Print Resume
@@ -26,7 +248,7 @@ export default function ResumePage() {
 
       {/* Resume */}
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12 print:max-w-none print:px-0 print:py-0">
-        <article className="bg-white print:w-full">
+        <article className="w-full bg-white" id="resume-content">
           {/* Header */}
           <header className="border-b-2 border-slate-900 pb-6">
             <h1 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
@@ -128,115 +350,34 @@ export default function ResumePage() {
 
           {/* Experience */}
           <ResumeSection title="Professional Experience">
-            <div className="space-y-7">
-              {/* Senior */}
-              <ExperienceItem
-                role="Senior .NET / Angular Developer"
-                company="Company Name"
-                period="2023 — Present"
-                location="India"
-                description="Developing and maintaining scalable business applications using .NET, Angular, SQL Server, and modern software development practices."
-                responsibilities={[
-                  "Develop full-stack web applications using .NET and Angular.",
-                  "Design and integrate RESTful APIs for business applications.",
-                  "Develop reusable Angular components and responsive interfaces.",
-                  "Work with SQL Server databases, queries, and stored procedures.",
-                  "Implement authentication, authorization, and business workflows.",
-                  "Collaborate with teams to translate business requirements into technical solutions.",
-                ]}
-              />
-
-              {/* Developer */}
-              <ExperienceItem
-                role=".NET / Angular Developer"
-                company="Company Name"
-                period="2021 — 2023"
-                location="India"
-                description="Built business-focused web applications and backend services while working across frontend, backend, and database layers."
-                responsibilities={[
-                  "Developed applications using C#, .NET, Angular, and SQL Server.",
-                  "Built REST APIs and integrated third-party services.",
-                  "Created dashboards, forms, data tables, and business workflows.",
-                  "Implemented database operations using Entity Framework and SQL.",
-                  "Fixed application issues and improved existing functionality.",
-                  "Participated in application testing, debugging, and deployment activities.",
-                ]}
-              />
-
-              {/* Software Developer */}
-              <ExperienceItem
-                role="Software Developer"
-                company="Company Name"
-                period="2020 — 2021"
-                location="India"
-                description="Worked on web and business applications while gaining hands-on experience across the Microsoft development ecosystem."
-                responsibilities={[
-                  "Developed application features using C# and .NET.",
-                  "Created frontend functionality using Angular.",
-                  "Worked with SQL Server and application data.",
-                  "Implemented CRUD functionality and business logic.",
-                  "Debugged issues and supported existing applications.",
-                  "Worked with development teams to deliver application features.",
-                ]}
-              />
+            <div className="space-y-5">
+              {experience.map((item, index) => (
+                <ExperienceItem
+                  key={index}
+                  role={`${item.role}`}
+                  company={`${item.company}`}
+                  period={`${item.period}`}
+                  location={`${item.location}`}
+                  description={`${item.description}`}
+                  responsibilities={item.responsibilities}
+                />
+              ))}
             </div>
           </ResumeSection>
 
           {/* Projects */}
           <ResumeSection title="Selected Projects">
-            <div className="space-y-6">
-              <ProjectItem
-                title="Prognosis Finance ERP"
-                role="Full-Stack Developer"
-                technologies=".NET, .NET Core, JavaScript, jQuery, SQL Server, Entity Framework Core"
-                description="Production-based healthcare and insurance finance ERP developed by transitioning an existing desktop application into a modern web platform. Worked on API development, frontend functionality, business workflows, and WhatsApp API integration."
-                highlights={[
-                  "Developed and integrated REST APIs based on business requirements.",
-                  "Implemented frontend functionality and connected Angular/web interfaces with backend services.",
-                  "Worked across procurement, finance, sales, costing, inventory, pharmacy, dental, and patient management workflows.",
-                  "Implemented WhatsApp-related functionality without relying on a third-party API provider.",
-                ]}
-              />
-
-              <ProjectItem
-                title="Horizon Prognosis Health Insurance"
-                role="Full-Stack Developer"
-                technologies=".NET Core 5, Angular 13+, SQL Server"
-                description="Production-based healthcare and insurance management platform supporting Underwriting, PBM, Claims, Sales, Administration, and Finance modules."
-                highlights={[
-                  "Implemented frontend functionality and backend API integration.",
-                  "Worked across interconnected ERP modules and business workflows.",
-                  "Investigated existing frontend and API flows before implementing changes.",
-                  "Resolved application issues and tested related functionality.",
-                ]}
-              />
-
-              <ProjectItem
-                title="Raats | Motorsports"
-                role="Full-Stack Developer"
-                technologies=".NET 9, Angular 21, Entity Framework Core 10"
-                description="Production-based tyre service and warehouse management platform supporting Admin, User, and Customer roles."
-                highlights={[
-                  "Implemented role-based functionality for Admin, User, and Customer.",
-                  "Worked on orders, quotations, assignments, tasks, schedules, customers, and logistics.",
-                  "Integrated frontend functionality with backend APIs.",
-                  "Implemented workflows according to different user permissions.",
-                ]}
-              />
-
-              <ProjectItem
-                title="Villa Management System"
-                role="Full-Stack Developer"
-                technologies="Blazor Server, .NET 9, SQL Server, 3-Tier Architecture, Flywire, Zoho CRM, WordPress"
-                description="Villa Management ERP for managing properties, rooms, availability, seasonal pricing, bookings, quotations, payments, and enquiries."
-                highlights={[
-                  "Developed and maintained admin-side ERP functionality using Blazor Server and .NET 9.",
-                  "Implemented villa, room, availability, pricing, booking, quotation, payment, and enquiry management.",
-                  "Integrated Flywire payment workflows and payment status synchronization.",
-                  "Worked on Zoho CRM API integration and ERP synchronization with WordPress.",
-                  "Implemented automated booking and payment reminder workflows.",
-                ]}
-              />
+            <div className="space-y-4">
+              {featuredProjects.map((project, index) => (
+                <ProjectItem
+                  key={index}
+                  title={`${project.title}`}
+                  role={`${project.role}`}
+                  technologies={`${project.technologies}`}
+                  description={`${project.description}`}
+                  highlights={project.results}
+                />
+              ))}
             </div>
           </ResumeSection>
 
@@ -278,7 +419,7 @@ function ResumeSection({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mt-7">
+    <section className="mt-5">
       <h2 className="mb-3 border-b border-slate-200 pb-1.5 text-sm font-bold uppercase tracking-wider text-slate-900">
         {title}
       </h2>
@@ -313,7 +454,7 @@ function ExperienceItem({
   responsibilities: string[];
 }) {
   return (
-    <article>
+    <article className="experience-item">
       <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-start">
         <div>
           <h3 className="text-base font-bold text-slate-900">{role}</h3>

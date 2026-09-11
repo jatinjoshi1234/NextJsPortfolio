@@ -1,4 +1,5 @@
 const exp = "6+";
+const dotNetExp = "4+";
 
 export const siteConfig = {
   personal: {
@@ -86,7 +87,7 @@ export const siteConfig = {
 
   stats: [
     {
-      value: exp,
+      value: dotNetExp,
       label: "Years Experience",
     },
     {

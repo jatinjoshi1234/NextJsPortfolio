@@ -124,29 +124,80 @@ export const projects: Project[] = [
     githubUrl: "https://github.com",
     featured: true,
   },
-  //{
-  //   slug: "ionic-mobile-application",
-  //   title: "Ionic Mobile Application",
-  //   category: "Mobile Application",
-  //   shortDescription:
-  //     "A cross-platform mobile application built with Ionic and Angular and connected to backend APIs.",
-  //   description:
-  //     "A mobile application designed to provide users with access to business functionality from mobile devices while communicating with backend services.",
-  //   technologies: ["Ionic", "Angular", "TypeScript", ".NET", "REST API"],
-  //   role: "Full-Stack Developer",
-  //   duration: "Project Duration",
-  //   challenge:
-  //     "Users needed access to important application functionality while away from desktop systems.",
-  //   solution:
-  //     "Developed a cross-platform Ionic application using Angular and integrated it with backend REST APIs. Implemented responsive mobile interfaces, forms, validation, and API-driven workflows.",
-  //   results: [
-  //     "Extended business functionality to mobile devices.",
-  //     "Created a reusable cross-platform mobile interface.",
-  //     "Integrated mobile workflows with existing backend APIs.",
-  //     "Provided users with convenient access to business functionality.",
-  //   ],
-  //   demoUrl: "https://example.com",
-  //   githubUrl: "https://github.com/",
-  //   featured: true,
-  // },
+  {
+    slug: "matrimonial-platform",
+    title: "Matrimonial Platform",
+    category: "Web Application",
+    shortDescription:
+      "A web-based matrimonial platform developed using ASP.NET MVC 4.8, jQuery, Entity Framework, and SQL Server as part of a development team.",
+    description:
+      "A database-driven matrimonial web application developed as part of a team, where I contributed to frontend UI functionality, backend API development, business workflows, and database-driven CRUD operations.",
+    technologies: [
+      "ASP.NET MVC 4.8",
+      "C#",
+      "Entity Framework",
+      "jQuery",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "REST API",
+      "SQL Server",
+    ],
+    role: "Full-Stack Developer",
+    duration: "6 month",
+    challenge:
+      "The project required an interactive and user-friendly matrimonial platform with dynamic UI functionality, efficient database operations, and reliable integration between frontend and backend services.",
+    solution:
+      "Worked collaboratively with the development team to implement frontend functionality using jQuery and JavaScript, develop backend APIs and business logic using ASP.NET MVC 4.8 and C#, and implement database CRUD operations using Entity Framework. Contributed to API integration, form validation, AJAX-based operations, and dynamic data handling.",
+    results: [
+      "Contributed to the development and maintenance of core matrimonial platform functionality.",
+      "Developed interactive UI functionality using jQuery and JavaScript.",
+      "Developed and integrated backend APIs using ASP.NET MVC 4.8 and C#.",
+      "Implemented database CRUD operations using Entity Framework.",
+      "Collaborated with team members to implement business requirements and application workflows.",
+      "Integrated frontend components with backend APIs and database services.",
+      "Participated in debugging, testing, and enhancement of existing application functionality.",
+    ],
+    demoUrl: "",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    slug: "ionic-mobile-application",
+    title: "Matrimonial Mobile Application",
+    category: "Mobile Application",
+    shortDescription:
+      "A cross-platform matrimonial mobile application built with Ionic and Angular, integrated with .NET Framework 4.8 APIs, real-time chat, and push notifications.",
+    description:
+      "A cross-platform matrimonial mobile application developed to provide users with access to matrimonial features through mobile devices. The application communicates with backend services through REST APIs and includes real-time chat and push notification functionality.",
+    technologies: [
+      "Ionic",
+      "Angular",
+      "TypeScript",
+      ".NET Framework 4.8",
+      "C#",
+      "REST API",
+      "SignalR",
+      "OneSignal",
+      "SQL Server",
+    ],
+    role: "Full-Stack Developer",
+    duration: "5 Months",
+    challenge:
+      "The application required a mobile-first experience with reliable API communication, real-time user messaging, and timely notifications to keep users engaged with conversations and application activities.",
+    solution:
+      "Developed the Ionic and Angular mobile application and integrated it with backend REST APIs developed using .NET Framework 4.8. Implemented mobile screens, forms, validation, API-driven workflows, and data handling. Developed real-time chat functionality using SignalR for instant communication between users and integrated OneSignal for push notifications and real-time user alerts.",
+    results: [
+      "Developed and integrated REST APIs using .NET Framework 4.8 and C#.",
+      "Built and maintained cross-platform mobile functionality using Ionic, Angular, and TypeScript.",
+      "Integrated backend APIs with the Ionic mobile application.",
+      "Implemented real-time one-to-one chat functionality using SignalR.",
+      "Integrated OneSignal for push notifications and user alerts.",
+      "Implemented mobile forms, validation, API-driven workflows, and dynamic data handling.",
+      "Improved user engagement by providing real-time communication and timely notifications.",
+    ],
+    demoUrl: "https://example.com",
+    githubUrl: "https://github.com/",
+    featured: true,
+  },
 ];

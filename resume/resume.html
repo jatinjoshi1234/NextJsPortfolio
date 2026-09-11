@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Joshi - Full-Stack .NET & Angular Developer</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 12mm 15mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.45;
+            color: #111827;
+            background-color: #f3f4f6;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 40px 45px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+
+        .title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #2563eb;
+            margin-top: 2px;
+        }
+
+        .experience-badge {
+            font-size: 8.5pt;
+            font-weight: 600;
+            background: #f1f5f9;
+            color: #334155;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            margin-top: 10px;
+            font-size: 8.5pt;
+            color: #475569;
+        }
+
+        .contact-bar a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #0f172a;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        .summary {
+            color: #334155;
+            font-size: 9pt;
+            line-height: 1.5;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 16px;
+            font-size: 8.5pt;
+        }
+
+        .skill-group {
+            display: flex;
+            gap: 6px;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: #1e293b;
+            min-width: 110px;
+        }
+
+        .skill-value {
+            color: #475569;
+        }
+
+        /* Timeline & Experience */
+        .job,
+        .project {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .job-header,
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .job-role,
+        .project-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .job-company,
+        .project-role {
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .job-date,
+        .project-tech {
+            font-size: 8.5pt;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .job-location {
+            font-size: 8pt;
+            color: #64748b;
+            text-align: right;
+        }
+
+        ul.bullets {
+            list-style-type: disc;
+            margin-left: 16px;
+            margin-top: 3px;
+        }
+
+        ul.bullets li {
+            font-size: 8.5pt;
+            color: #334155;
+            margin-bottom: 2px;
+            line-height: 1.4;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            padding: 8px 10px;
+            background: #fafafa;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .project-card .project-tech {
+            font-size: 7.5pt;
+            color: #0284c7;
+            font-weight: 600;
+            margin: 2px 0 4px 0;
+        }
+
+        .project-card p {
+            font-size: 8pt;
+            color: #475569;
+            line-height: 1.35;
+        }
+
+        /* Print Settings */
+        @media print {
+            body {
+                background: none;
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            a {
+                color: #000000 !important;
+                text-decoration: none;
+            }
+
+            .project-card {
+                background: none;
+                border: 1px solid #cbd5e1;
+            }
+
+            .experience-badge {
+                border: 1px solid #94a3b8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- HEADER -->
+        <header>
+            <div class="header-main">
+                <div>
+                    <h1>Jatin Joshi</h1>
+                    <div class="title">Full-Stack .NET & Angular Developer</div>
+                </div>
+                <div class="experience-badge">6+ Years Experience</div>
+            </div>
+            <div class="contact-bar">
+                <span>Khambhaliya, Gujarat, India</span> •
+                <span>+91 9558137289</span> •
+                <span><a href="mailto:jjdb04121997@gmail.com">jjdb04121997@gmail.com</a></span> •
+                <span><a href="https://jatin-joshi-portfolio.vercel.app/" target="_blank">Portfolio</a></span> •
+                <span><a href="https://www.linkedin.com/in/jatin-joshi-12b32b198" target="_blank">LinkedIn</a></span> •
+                <span><a href="https://github.com/jatinjoshi1234" target="_blank">GitHub</a></span>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section>
+            <div class="section-title">Professional Summary</div>
+            <p class="summary">
+                Full-Stack Developer with 6+ years of experience engineering production-grade web and enterprise
+                applications using <strong>.NET Core, ASP.NET, Angular, Blazor, and SQL Server</strong>. Proficient
+                across the complete software development lifecycle, including RESTful API design, database modeling, UI
+                implementation, authorization architecture, and third-party integrations.
+            </p>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <div class="section-title">Technical Expertise</div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <span class="skill-label">Backend & APIs:</span>
+                    <span class="skill-value">C#, .NET Core, ASP.NET, REST APIs, EF Core</span>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Frontend Tech:</span>
+                    <span class="skill-value">Angular, TypeScript, Blazor Server, HTML5/CSS3</span>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Databases:</span>
+                    <span class="skill-value">SQL Server, T-SQL, Stored Procedures, LINQ</span>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Integrations:</span>
+                    <span class="skill-value">WhatsApp API, Flywire, Zoho CRM, Payment Gateways</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <div class="section-title">Work Experience</div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-role">.NET / Blazor / Angular Developer</span> — <span
+                            class="job-company">Connectus Infoway Pvt Ltd</span>
+                    </div>
+                    <div class="job-date">2022 — Present</div>
+                </div>
+                <div class="job-location">Rajkot, Gujarat</div>
+                <ul class="bullets">
+                    <li>Engineered full-stack enterprise applications using C#, .NET, Angular, Blazor Server, and SQL
+                        Server.</li>
+                    <li>Designed RESTful APIs enabling core business logic and seamless third-party platform
+                        communications.</li>
+                    <li>Built modular, reusable Angular components and high-performance, responsive web interfaces.</li>
+                    <li>Implemented role-based security, OAuth/JWT authentication, and workflow automation.</li>
+                    <li>Optimized database operations with Entity Framework Core, complex LINQ queries, and stored
+                        procedures.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-role">Junior .NET & Angular Developer</span> — <span class="job-company">Mehta
+                            Websolutions</span>
+                    </div>
+                    <div class="job-date">2020 — 2022</div>
+                </div>
+                <div class="job-location">Jamnagar, Gujarat</div>
+                <ul class="bullets">
+                    <li>Developed web services and database workflows using .NET Framework, C#, Angular, and SQL Server.
+                    </li>
+                    <li>Constructed custom data tables, administrative dashboards, and interactive reporting features.
+                    </li>
+                    <li>Maintained data layer efficiency using Entity Framework and optimized SQL queries.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-role">Store Incharge</span> — <span class="job-company">Kalyans' Hotels</span>
+                    </div>
+                    <div class="job-date">2018 — 2020</div>
+                </div>
+                <div class="job-location">Khambhaliya, Gujarat</div>
+                <ul class="bullets">
+                    <li>Supervised store inventory tracking, material distribution, and operational reporting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <div class="section-title">Key Projects</div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">Raats Motorsports Platform</div>
+                    <div class="project-tech">.NET 9 • Angular 21 • EF Core 10</div>
+                    <p>Operations platform for tyre services, quotations, scheduling, logistics, and multi-tier user
+                        access.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Villa Management ERP</div>
+                    <div class="project-tech">Blazor Server • .NET 9 • SQL Server • Flywire • Zoho CRM</div>
+                    <p>Property management suite handling reservations, multi-currency payments, quotations, and CRM
+                        integrations.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Prognosis Finance ERP</div>
+                    <div class="project-tech">.NET Core • JavaScript • jQuery • SQL Server • EF Core</div>
+                    <p>Migrated legacy desktop workflows to a web application. Implemented API services and WhatsApp API
+                        messaging.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Horizon Health Insurance Platform</div>
+                    <div class="project-tech">.NET Core 5 • Angular 13+ • SQL Server</div>
+                    <p>Healthcare platform covering Underwriting, PBM, Claims Processing, Sales, and Financial
+                        Operations.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Matrimonial Platform</div>
+                    <div class="project-tech">.NET MVC 4.8 • C# • Entity Framework • jQuery • REST API </div>
+                    <p>A web-based matrimonial platform developed using ASP.NET MVC 4.8, jQuery, Entity Framework, and
+                        SQL Server as part of a development team.</p>
+                    <p>A database-driven matrimonial web application developed as part of a team, where I contributed to
+                        frontend UI functionality, backend API development, business workflows, and database-driven CRUD
+                        operations.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Matrimonial Mobile Application</div>
+                    <div class="project-tech">Ionic • Angular 13 • .NET Framework 4.8 • C# • REST API •
+                        SignalR • OneSignal </div>
+                    <p>A cross-platform matrimonial mobile application built with Ionic and Angular, integrated with
+                        .NET Framework 4.8 APIs, real-time chat, and push notifications. </p>
+                    <p>A cross-platform matrimonial mobile application built with Ionic and Angular, integrated with
+                        .NET Framework 4.8 APIs, real-time chat, and push notifications. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
