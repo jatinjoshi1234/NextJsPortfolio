@@ -9,8 +9,8 @@ const featuredProjects = projects.filter((project) => project.featured);
 export default function ResumePage() {
   const downloadResume =  () => {
      const link = document.createElement("a");
-      link.href = "/jatin-joshi.pdf";
-      link.download = "jatin-joshi.pdf";
+      link.href = "/Jatin_Joshi_Cv.pdf";
+      link.download = "Jatin_Joshi_Cv.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

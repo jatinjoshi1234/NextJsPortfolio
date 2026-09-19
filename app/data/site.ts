@@ -31,7 +31,7 @@ export const siteConfig = {
   },
 
   social: {
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/joshi-jatin-12b32b198/",
     github: "https://github.com/",
   },
 
