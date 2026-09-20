@@ -1,0 +1,563 @@
+<div id="global-renderer-preview" class="page-break-wrap" style="position: relative; visibility: visible; overflow: visible; overflow-anchor: none; transition: none !important; width: 686px; height: 2010px;"><style>
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+        body{background:#FFF;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+        .preview-container .skn-lcb3 table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%;table-layout:fixed}
+
+        .preview-container .skn-lcb3 ul,.preview-container .skn-lcb3 li{list-style-type:none;margin:0 0 0 10px;padding:0}
+        .preview-container .skn-lcb3 ul li{margin:0 0 0 13px;position:relative}
+        .preview-container .skn-lcb3 ul li:before{content:"\2022";position:absolute;left:-13px;top:1px} /* add relative to li class */
+        .preview-container .skn-lcb3 .skli-sec ul li:before,.preview-container .skn-lcb3 .lang-sec ul li:before{left:-15px}
+
+        .preview-container .skn-lcb3 .address li,.preview-container .skn-lcb3 .address ul{display:inline;margin:0;padding:0;list-style:none}
+        .preview-container .skn-lcb3 .address li:before{color:#44b3e6;content:"\2022\0020";vertical-align:bottom;position:static}
+        .preview-container .skn-lcb3 .address li:first-child:before{content:""}
+        .preview-container .skn-lcb3 .paddedline{display:block}
+        .preview-container .skn-lcb3 .txtReglr{font-weight:400}
+        .preview-container .skn-lcb3 .txtSmBld{font-weight:600}
+        .preview-container .skn-lcb3 .dates_wrapper{display:block;float:left;color:#999}
+        .preview-container .skn-lcb3 .hiltSec,.preview-container .skn-lcb3 .parlrColmn{width:100%}
+        .preview-container .skn-lcb3 .parlrColmn:after{content:'';clear:both;display:table}
+        .preview-container .skn-lcb3 .hiltSec .heading{float:left}
+        .preview-container .skn-lcb3 .logo,.preview-container .skn-lcb3 .nodisplay,.preview-container .skn-lcb3 .displayNoneThisField{display:none}
+        .preview-container .skn-lcb3 .flt-right{float:right}
+        .preview-container .skn-lcb3 .txt-bold{font-weight:bold}
+        .preview-container .skn-lcb3 .totl-expr{display:inline-block;padding:0 6px;color:#000;font-weight:600;vertical-align:top;text-wrap:nowrap;position:relative}
+        .preview-container .skn-lcb3 .totl-expr:before{content:'';position:absolute;left:0;top:0;width:100%;height:100%;opacity:.2}
+        .preview-container .skn-lcb3.texp-curved .totl-expr:before{border-radius:10px}
+        .preview-container .skn-lcb3 .skli-name-normalwgt .txt-bold{font-weight:400}
+
+        .preview-container .skn-lcb3{color:#616261;background-color:#fff!important;word-wrap:break-word;line-height:1}
+        .preview-container .skn-lcb3 .SECTION_CNTC,.preview-container .skn-lcb3 .firstsection{border:none;padding:0}
+		.preview-container .skn-lcb3 .SECTION_ALNK{margin-top:15px!important}
+        .preview-container .skn-lcb3 .name{color:#616261;font-weight:600;font-size:15px;line-height:17px;padding:0;text-transform:uppercase;text-align:center}
+        .preview-container .skn-lcb3 .resumeTitle{color:#4a4a4a}
+        .preview-container .skn-lcb3 .paragraph{position:relative}
+        .preview-container .skn-lcb3 .heading{clear:both;font-weight:normal}
+        .preview-container .skn-lcb3 .address{position:relative;text-align:center;font-size:0.917em;line-height:1.25em;margin-top:5px}
+        .preview-container .skn-lcb3 .address2{position:relative;text-align:left;font-size:0.917em;line-height:1.25em}
+        .preview-container .skn-lcb3 .sectiontitle{font-weight:600;text-transform:uppercase}
+        .preview-container .skn-lcb3 .table_wrapper{width:100%;margin-top:0}
+        .preview-container .skn-lcb3 table.twocol td{width:50%}
+        .preview-container .skn-lcb3 table.skills th,.preview-container .skn-lcb3 table.skills td{width:20%;text-align:center}
+        .preview-container .skn-lcb3 table.skills th{text-decoration:underline}
+        .preview-container .skn-lcb3 table.skills .skillname,.preview-container .skn-lcb3 table.skills .skillrating{text-align:left;width:35%}
+        .preview-container .skn-lcb3 table.skills .skillrating{width:20%}
+        .preview-container .skn-lcb3 table.skills .skillyears,.preview-container .skn-lcb3 table.skills .skilllast{width:19%}
+        .preview-container .skn-lcb3 table.skills .pad1{width:5%}
+        .preview-container .skn-lcb3 table.skills .pad2,.preview-container .skn-lcb3 table.skills .pad3{width:1%}
+        .preview-container .skn-lcb3 .address li.social,.preview-container .skn-lcb3 .address li.highlight-field{display:inline-block}
+        .preview-container .skn-lcb3 a{color:#0000EE;text-decoration:underline}
+        .preview-container .skn-lcb3 .address li.social:before,.preview-container .skn-lcb3 .address li.highlight-field:before{padding-left:3px}
+
+        .preview-container .skn-lcb3 .pdet-sec .singlecolumn{display:flex;justify-content:space-between;flex-wrap:wrap}
+        .preview-container .skn-lcb3 .pdet-sec .details-wrap{width:49%;margin-bottom:5px}
+        .preview-container .skn-lcb3 .pdet-sec .details-wrap:last-child,.preview-container .skn-lcb3 .pdet-sec .details-wrap:nth-last-child(2){margin-bottom:0}
+
+		/*New logic for infographic*/
+        .preview-container .skn-lcb3 .lang-sec .singlecolumn{display:none}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .infobarpara,.preview-container .skn-lcb3 .lang-sec.infotilesec .infotilepara{display:block}
+
+        /*Infographic*/
+        .preview-container .skn-lcb3 .lang-sec.infobarsec{font-size:0}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .field p,.preview-container .skn-lcb3 .lang-sec.infobarsec .nativeLangPara .field{display:inline}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .paragraph{display:inline-block;vertical-align:top;padding-bottom:5px;margin-top:0}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .singlecolumn{margin-left:0!important;padding-left:0;position:relative;width:100%}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .para_odd{margin-right:15px}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .nativeLangPara{width:100%!important}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .inner-rating{position:relative}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .rating-bar{background:#d5d6d6;width:100%;clear:both;margin-top:3px}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .inner-rating{background-color:#44b3e6;height:4px;width:60%}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .paragraph:before{display:none}
+		.preview-container .skn-lcb3 .lang-sec.infobarsec > .paragraph:nth-last-child(1),.preview-container .skn-lcb3 .lang-sec.infobarsec > .paragraph:nth-last-child(2){padding-bottom:0!important}
+
+        /*Infographic Tiles*/
+        .preview-container .skn-lcb3 .lang-sec.infotilesec,.preview-container .skn-lcb3 .skli-sec{font-size:0}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .paragraph,.preview-container .skn-lcb3 .skli-sec .paragraph{display:inline-block;vertical-align:top;padding-bottom:5px!important;margin-top:0}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec > .paragraph:nth-last-child(1),.preview-container .skn-lcb3 .lang-sec.infotilesec > .paragraph:nth-last-child(2),.preview-container .skn-lcb3 .skli-sec > .paragraph:nth-last-child(1),.preview-container .skn-lcb3 .skli-sec > .paragraph:nth-last-child(2){padding-bottom:0!important}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .field p,.preview-container .skn-lcb3 .skli-sec .field p,.preview-container .skn-lcb3 .lang-sec.infotilesec .nativeLangPara .field{display:inline}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .singlecolumn,.preview-container .skn-lcb3 .skli-sec .singlecolumn{margin-left:0!important;width:100%}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .sliced-rect,.preview-container .skn-lcb3 .skli-sec .sliced-rect{height:6px;width:100%;margin-top:3px;line-height:0px;clear:both}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .paragraph.para_odd,.preview-container .skn-lcb3 .skli-sec .paragraph.para_odd{margin-right:15px}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile,.preview-container .skn-lcb3 .skli-sec .sliced-rect .sliced-rect-tile{height:100%;background-color:#d5d6d6;float:left;margin-right:3px}
+        .preview-container .skn-lcb3 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile:last-child,.preview-container .skn-lcb3 .skli-sec .sliced-rect .sliced-rect-tile:last-child{margin-right:0}
+        .preview-container .skn-lcb3 .skli-sec ul,.preview-container .skn-lcb3 .lang-sec ul{margin-left:0}
+
+        /*Rectangular Rating Blocks*/
+        .preview-container .skn-lcb3 .sliced-rect .sliced-rect-tile.ratvfill{background-color:#44b3e6}
+		.preview-container .skn-lcb3 .hide-bar .rating-bar,.preview-container .skn-lcb3 .hide-bar .sliced-rect,.preview-container .skn-lcb3 .hide-colon .colon,.preview-container .skn-lcb3 .lang-sec.hide-only-bar .rating-bar,.preview-container .skn-lcb3 .lang-sec.hide-only-bar.infotilesec .sliced-rect{display:none!important}
+		
+        .preview-container .skn-lcb3 .nativeLangPara .field:first-child{font-weight:bold}
+
+		/*MPR*/
+		.preview-container .skn-lcb3 .hide-bar .field-ratt{display:none}
+
+        /*FIX for FORCEFULLY making left margin ZERO for CL*/
+        .preview-container .skn-lcb3 .sectionCL .paragraph{margin-top:0!important}
+        .preview-container .skn-lcb3 .displayNoneThisField{display:none}
+
+        /* Builder css for mobile device */
+        .android .preview-container .skn-lcb3, .ios .preview-container .skn-lcb3{box-sizing:content-box}
+        /*HILT multi para/section*/
+        .preview-container .skn-lcb3 .multi-para-hilt{position:relative;box-sizing:border-box;font-size:0}
+        .preview-container .skn-lcb3 .multi-para-hilt:after{content: "";display:block;clear:both;visibility:hidden;line-height:0;height:0} /*Clearfix*/
+        .preview-container .skn-lcb3 .multi-para-hilt .paragraph{margin-bottom:10px;margin-top:0;width:49%;display:inline-block;vertical-align:top;margin-left:0}
+        .preview-container .skn-lcb3 .multi-para-hilt .paragraph:last-child,.preview-container .skn-lcb3 .multi-para-hilt .paragraph:nth-last-child(2):nth-child(2n){margin-bottom:0}
+        .preview-container .skn-lcb3 .multi-para-hilt .paragraph:nth-child(2n+1){margin-left:2%}
+        .preview-container .skn-lcb3 .multi-para-hilt .singlecolumn{margin-left:0 !important;width:100%}
+        .preview-container .skn-lcb3 .multi-section-hilt .multi-para-opt,.preview-container .skn-lcb3 .section:not(.multi-para-hilt):not(.multi-section-hilt) .multi-para-opt,.preview-container .skn-lcb3 .multi-para-hilt .twocol.skill{display:none}
+        
+        /*HILT multi para - For PDF*/
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt{display:block}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper:after{content:'';clear:both;display:table;}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper .paragraph:first-child{float:left;margin-left:0}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper .paragraph:nth-child(2){float:right;margin-left:2%}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper .paragraph{margin-bottom:10px;}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper .paragraph:nth-child(2n){clear:none}
+        .preview-container .skn-lcb3.for-pdf .multi-para-hilt .pdfparawrapper:last-child .paragraph{margin-bottom:0}
+
+        .preview-container .skn-lcb3 .mexp .job-loc{color:#999}
+                            
+        /*Paginated HTML PDF*/
+        .preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paragraph,.preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper{display:block!important}      
+        .preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper .paragraph-container,.preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper > .paragraph{display:block!important;float:left}
+		.preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper .paragraph-container + .paragraph-container,.preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper > .paragraph + .paragraph{float:right}
+		.preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper > .paragraph{clear:none!important}
+        .preview-container .skn-lcb3.for-paginated-pdf .inf-sec .paginatedpdfinfwrapper:after{content:'';display:table;clear:both}
+    
+        /*Skills Category*/
+        .preview-container .skn-lcb3 .category-heading{font-size:11px;font-weight:bold;padding-bottom:5px}
+        .preview-container .skn-lcb3 .category-parent{break-inside:avoid;box-sizing:border-box;padding-bottom:10px;}
+        .preview-container .skn-lcb3 .category-parent:last-child{padding-bottom:0}
+        .preview-container .skn-lcb3 .category-parent .paragraph{width:100%!important;margin-left:7px}
+        .preview-container .skn-lcb3 .category-parent .coma-sptr{display:none!important}
+        .preview-container .skn-lcb3 .skli-sec .category-parent{display:none}
+        .preview-container .skn-lcb3.skills-category .skli-sec .category-parent{display:block;width:100%}
+        .preview-container .skn-lcb3.skills-category .skli-sec{column-count:1!important}
+        .preview-container .skn-lcb3.skills-category .category-heading{padding-bottom:0}
+        .preview-container .skn-lcb3.skills-category .category-heading{display:inline-block;position:relative;padding-right:6px;}
+        .preview-container .skn-lcb3.skills-category .category-heading::after{content:":";position:absolute;right:2px;top:0px}
+        .preview-container .skn-lcb3.skills-category .category-heading{display:inline-block;width:auto!important}
+        .preview-container .skn-lcb3.skills-category .category-parent .paragraph{width:auto!important;display:inline;margin-bottom:0px!important;margin-left:0!important;margin-right:0px!important;padding-bottom:0 !important}
+        .preview-container .skn-lcb3.skills-category .category-parent .paragraph .field{display:inline}
+        .preview-container .skn-lcb3.skills-category .category-parent .paragraph .field p{display:inline}
+        .preview-container .skn-lcb3.skills-category .category-parent .coma-sptr{display:inline-block!important}
+        .preview-container .skn-lcb3.skills-category .category-parent .paragraph:last-child .coma-sptr,.preview-container .skn-lcb3.skills-category .skli-sec li:before{display:none!important}
+        .preview-container .skn-lcb3.skills-category:not(.skills-category-bullet) .skli-sec li,.preview-container .skn-lcb3.skills-category:not(.skills-category-bullet) .skli-sec ul{margin-left:0;padding-left:0;display:inline;list-style:none}
+
+        /*Skills Category - Bullet list layout (default skills-category layout above unchanged)*/
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-heading{display:block;width:100%!important;padding-right:0;padding-bottom:5px}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-heading::after{content:none}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent:after{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent .paragraph{width:48%!important;display:inline-block;margin-top:0;margin-bottom:5px !important;margin-right:0;padding-bottom:0!important;box-sizing:border-box;vertical-align:top}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent .paragraph:nth-child(2n+1){margin-left:2%!important}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent .paragraph:nth-child(2n){margin-left:7px!important}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent .paragraph .field,.preview-container .skn-lcb3.skills-category.skills-category-bullet .skli-sec li:before{display:block!important}
+        .preview-container .skn-lcb3.skills-category.skills-category-bullet .category-parent .coma-sptr{display:none!important}
+
+        /* major minor Functionality */
+        .preview-container .skn-lcb3 .minor-parent .plural-minor { display: none; }
+        .preview-container .skn-lcb3 .minor-parent .singular-minor { display: inline; }
+        .preview-container .skn-lcb3 .minor-parent .singular-minor:not(:nth-last-child(3)) { display: none; }
+        .preview-container .skn-lcb3 .minor-parent .plural-minor:not(:nth-last-child(2)) { display: inline; }
+        .preview-container .skn-lcb3 .minor-parent .plural-minor:last-child { display: none; }
+        .preview-container .skn-lcb3 .minor-parent > .plural-minor + .catg-minor .minor-comma  { display: none; }
+        .preview-container .skn-lcb3 .major-parent > .plural-major + .catg-major .major-comma  { display: none; }
+
+                /* hiding all the major minor elements by default */
+        .preview-container .skn-lcb3 .paragraph:not(.major-minor-para) .major-minor-parent{display: none!important}
+        .preview-container .skn-lcb3 .paragraph.major-minor-para .major-minor-parent{display: block!important}
+
+        /*Iron PDF duration change */
+        .preview-container .skn-lcb3.for-iron-pdf .totl-expr{white-space: nowrap!important}
+
+
+        .preview-container .skn-lcb3,.preview-container .skn-lcb3 table{line-height:16px}
+        .preview-container .skn-lcb3.pagesize{width:521px}
+        .preview-container .skn-lcb3.fontsize,.preview-container .skn-lcb3 .lang-sec.infobarsec .paragraph *,.preview-container .skn-lcb3 .lang-sec.infotilesec .paragraph *,.preview-container .skn-lcb3 .skli-sec .paragraph *,.preview-container .skn-lcb3 .multi-para-hilt .paragraph *{font-size:11px}
+        .preview-container .skn-lcb3.fontface{font-family:Century Gothic}
+        .preview-container .skn-lcb3{min-height:718px}
+        .preview-container .skn-lcb3.pgsz-a4{min-height:768px}
+        .preview-container .skn-lcb3.vmargins{padding-top:37px;padding-bottom:37px}
+        .preview-container .skn-lcb3.hmargins{padding-left:37px;padding-right:37px}
+        .preview-container .skn-lcb3 .section{margin-top:15px}
+        .preview-container .skn-lcb3 .sectiontitle{font-size:12px;line-height:17px}
+        .preview-container .skn-lcb3 .heading{margin-bottom:5px}
+        .preview-container .skn-lcb3 .paragraph{margin-top:10px}
+		.preview-container .skn-lcb3 .resumeTitle{font-size:15px;text-align:center;line-height:15px;padding:7px 0 0 0}
+        .preview-container .skn-lcb3 .firstsection,.preview-container .skn-lcb3 .firstparagraph,.preview-container .skn-lcb3 .SECTION_CNTC{margin-top:0!important}
+        .preview-container .skn-lcb3 .singlecolumn,.preview-container .skn-lcb3 .maincolumn{margin-left:0px;width:521px}
+        .preview-container .skn-lcb3 table.skills td{padding-top:5px}
+        .preview-container .skn-lcb3 .name{font-size:29px;line-height:49px}
+        .preview-container .skn-lcb3 .totl-expr{font-size:9px;line-height:14px}
+        .preview-container .skn-lcb3 .totl-expr:before{background-color:#2b98de}
+        .preview-container .skn-lcb3 .address{font-size:11px;line-height:16px;margin-top:7px}
+        .preview-container .skn-lcb3 .address li:before{font-size:22px;color:#2b98de;margin-right:-3px}
+        .preview-container .skn-lcb3 .hiltSec .heading,.preview-container .skn-lcb3 .dates_wrapper{width:150px}
+        .preview-container .skn-lcb3 .parlrColmn .singlecolumn,.preview-container .skn-lcb3 .hiltSec .singlecolumn{margin-left:150px;width:auto}
+        .preview-container .skn-lcb3 .multi-para-hilt .heading{margin-left:-150px}
+        .preview-container .skn-lcb3 ul li:before{font-size:12px}
+
+        /*Skills Category*/
+        .preview-container .skn-lcb3.skills-category .category-heading{font-size:12px}
+
+
+        /*FIX for Re-calculating width of singlecolumn for CL*/
+        .preview-container .skn-lcb3 .sectionCL{border:none;margin-top:none}
+        .preview-container .skn-lcb3 .sectionCL .singlecolumn{margin-left:0!important;width:100%}
+        .preview-container .skn-lcb3 .address2{font-size:11px;line-height:16px}
+		
+		/*Infographic*/
+		.preview-container .skn-lcb3 .lang-sec.infobarsec{padding-left:0px}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .heading{margin-left:-0px}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .paragraph{margin-top:0px}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .inner-rating{background-color:#2b98de}
+        .preview-container .skn-lcb3 .lang-sec.infobarsec .paragraph{width:250.5px}
+
+		/*Infographic Tiles*/
+		.preview-container .skn-lcb3 .lang-sec.infotilesec,.preview-container .skn-lcb3 .skli-sec{padding-left:0px}
+		.preview-container .skn-lcb3 .lang-sec.infotilesec .heading,.preview-container .skn-lcb3 .skli-sec .heading{margin-left:-0px}
+		.preview-container .skn-lcb3 .lang-sec.infotilesec .paragraph,.preview-container .skn-lcb3 .skli-sec .paragraph{width:250.5px}
+		.preview-container .skn-lcb3 .lang-sec.infotilesec .nativeLangPara{width:521px;max-width:521px}
+
+		/*Rectangular Rating Blocks*/
+        .preview-container .skn-lcb3 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:#2b98de}
+        /*HILT multi para*/   
+        .preview-container .skn-lcb3 .multi-para-hilt{padding-left:150px}
+    
+        .preview-container .skn-lcb3 .groupChildPara.paragraph .companyloc{display:none}
+
+        /*Pagination Parameters*/
+        .preview-container .skn-lcb3{data-ptbm:37px;data-pgsz:595px}
+        /*Page Count*/
+        .preview-container .skn-lcb3{data-PGSZ:595px;data-MGOF:74px}
+        .preview-container .skn-lcb3.skills-category-bullet.for-iron-pdf .category-parent{break-inside:auto!important}
+
+
+.page-break-wrap .document.LCB3 { width: 521px; }
+</style><div><div class="document skn-lcb3 fontsize fontface vmargins hmargins pagesize LCB3 ZTY    single-column-doc pgsz-a4 skills-category texp-none" docskinwidth="521" data-testid="embd-95CA90b" style="transition: none !important; transform: scale(1.15, 1.15) !important; transform-origin: left top;">
+<!-- Feature Functionality Support -
+Photo shape support - No
+Duration tag - Yes
+PPDT Section - No
+SGTR section - No
+PICT support - No
+Monogram support - No
+-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div id="SECTION_NAME" class="section notdraggable SECTION_NAME firstsection" data-section-id="68ca932f-6b79-448f-b811-cc7d98d09f86" data-section-type="NAME" data-section-cd="NAME" style="position: relative;">
+            <div id="PARAGRAPH_NAME" class="paragraph PARAGRAPH_NAME firstparagraph" data-para-id="dc80ee13-aa69-4e0b-afc5-e497fd64d298" data-para-index="0">
+                <div class="name">
+                    <span id="FIELD_FNAM">Jatin</span><span dependency="FNAM+LNAM"></span>
+                    <span id="FIELD_LNAM">Joshi</span>
+                </div>
+				 <div class="resumeTitle" dependency="DCTL"><span id="FIELD_DCTL">Software Developer</span></div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button></div></div><div id="SECTION_CNTC" class="section SECTION_CNTC notdraggable" data-section-id="91438ec1-c8d5-4d38-a883-11c6b0acf975" data-section-type="CNTC" data-section-cd="CNTC" style="position: relative;">
+            <div id="PARAGRAPH_CNTC" class="paragraph PARAGRAPH_CNTC firstparagraph" data-para-id="2f9c7f83-839d-4e79-a6ec-d8bf6f4b38b5" data-para-index="0">
+                <div class="address">
+                    <ul>
+						<li dependency="HPHN"><span id="FIELD_HPHN">+91 9558137289</span></li>
+						
+						<li dependency="EMAI"><span id="FIELD_EMAI">jjdb0412997@gmail.com</span></li>
+                        <li dependency="ADDR|STRT|CITY|STAT|ZIPC"><span id="FIELD_STRT"></span><span class="spaced" id="FIELD_CITY"></span><span class="spaced" id="FIELD_STAT"></span> <span class="spaced" id="FIELD_ZIPC"></span>
+						<span class="spaced" id="FIELD_ADDR">Khambhalia, GJ 361305</span>
+						</li>
+						
+                        
+                        
+                        
+                    <li dependency="SOCL" class="social" id="CATEGORY_SOCIAL_SOCL">
+                            <span docdatainfodependency="SOCL" class="xslt_static_change txt-bold docdatainfo"><span docdatainfodependency="SOCL" id="DOCDATAINFO_SOCL">LinkedIn</span><span>: </span></span>
+                            <span id="FIELD_SOCL"><a data-testid="embd-socl-link" href="https://linkedin.com/in/jatin-joshi-12b32b198" target="_blank">linkedin.com/in/jatin-joshi-12b32b198</a></span>     
+                        </li><li dependency="SOCL" class="social" id="CATEGORY_SOCIAL_SOCL">
+                            <span docdatainfodependency="SOCL" class="xslt_static_change txt-bold docdatainfo"><span docdatainfodependency="SOCL" id="DOCDATAINFO_SOCL">WWW</span><span>: </span></span>
+                            <span id="FIELD_SOCL">Https://jatin-joshi.vercel.app</span>     
+                        </li></ul>
+                </div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button></div></div><div id="SECTION_ALNK" class="section SECTION_ALNK" data-section-id="ee0e4c57-b818-77da-1c7d-e5ced469373e" data-section-type="ALNK" data-section-cd="ALNK" style="position: relative;">
+			<div class="heading">
+				<div class="sectiontitle" id="SECTIONNAME_ALNK">Websites, Portfolios, Profiles<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+			</div>
+            <div class="paragraph firstparagraph" id="PARAGRAPH_ALNK" data-para-id="57232778-b3ac-4cd1-b5b8-458c0a8e091b" data-para-index="0">
+                <div class="singlecolumn">
+					<ul>
+						<li dependency="LNK1"><span id="FIELD_LNK1">http://jatin-joshi.vercel.app/</span></li>
+                        <li dependency="LNK2"><span id="FIELD_LNK2"><a class="normalize-social-link" data-testid="embd-alnk-LNK2" href="https://linkedin.com/in/jatin-joshi-12b32b198" target="_blank" onclick="event.stopPropagation();">linkedin.com/in/jatin-joshi-12b32b198</a></span></li>
+                        <li dependency="LNK3"><span id="FIELD_LNK3">https://github.com/jatinjoshi1234</span></li>
+                        
+					</ul>
+				</div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div><div id="SECTION_SUMM" class="section SECTION_SUMM" data-section-id="979ae1ac-90da-4c24-b4f6-3be07b18c6de" data-section-type="SUMM" data-section-cd="SUMM" style="position: relative;">
+            <div class="heading">
+                <div class="sectiontitle" id="SECTIONNAME_SUMM">Professional Summary<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+            </div>
+            <div class="paragraph firstparagraph" id="PARAGRAPH_SUMM" data-para-id="a63f0cc2-f7a2-4023-88da-9a50f8ac774a" data-para-index="0">
+                <div class="singlecolumn" id="FIELD_FRFM">Full-Stack .NET Developer building production web applications with C#, .NET, Angular, Blazor Server, SQL Server, and Azure DevOps. Develops RESTful APIs, role-based security, and OAuth/JWT authentication while delivering responsive business workflows and third-party integrations. Improves application performance through Entity Framework Core, LINQ, stored procedures, and T-SQL optimization.</div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div><div id="SECTION_SKLI" class="section skli-sec inf-sec SECTION_SKLI infotilesec hide-colon hide-bar multi-para" data-section-id="69e01bae-a10e-738e-9df1-88da617e0d33" data-section-type="SKLI" data-section-cd="SKLI" data-ratingscale="5" style="position: relative;">
+            <div class="heading">
+                <div class="sectiontitle" id="SECTIONNAME_SKLI">Skills<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+            </div>
+            
+             <div id="CATEGORY_SKLI" class="category-parent">
+                <div id="CATEGORYHEADING_SKLI" class="category-heading">Technical Skills</div>
+                
+            <div id="PARAGRAPH_SKLI" class="paragraph category-paragraph firstparagraph para_odd" data-para-id="47726cc0-df09-3805-681e-6590e6d5a532" data-testid="PARAGRAPH_SKLI_47726cc0-df09-3805-681e-6590e6d5a532" data-para-index="0">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">C#</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="87c657a6-373a-58d1-7d4a-0915892cf08d" data-testid="PARAGRAPH_SKLI_87c657a6-373a-58d1-7d4a-0915892cf08d" data-para-index="1">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">ASP.NET Core</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="a3121960-a19b-bdb5-6196-56d4fb88b088" data-testid="PARAGRAPH_SKLI_a3121960-a19b-bdb5-6196-56d4fb88b088" data-para-index="2">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">Angular</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="4ebb3368-3257-8d92-e21d-0efec7dbfcf2" data-testid="PARAGRAPH_SKLI_4ebb3368-3257-8d92-e21d-0efec7dbfcf2" data-para-index="3">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">TypeScript</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="12161c3d-6f8f-05e9-2433-bba213d1d4d4" data-testid="PARAGRAPH_SKLI_12161c3d-6f8f-05e9-2433-bba213d1d4d4" data-para-index="4">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">SQL Server</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="02f24e48-8b66-23da-aae4-87ecb4649349" data-testid="PARAGRAPH_SKLI_02f24e48-8b66-23da-aae4-87ecb4649349" data-para-index="5">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">Azure DevOps</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="da1c9ac6-53bc-3719-ea8d-0afbddf3e51a" data-testid="PARAGRAPH_SKLI_da1c9ac6-53bc-3719-ea8d-0afbddf3e51a" data-para-index="6">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">Microservices architecture</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="8b8e05f4-3259-5864-e68f-3070e3e18cf3" data-testid="PARAGRAPH_SKLI_8b8e05f4-3259-5864-e68f-3070e3e18cf3" data-para-index="7">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">Cloud deployment</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="54297704-27fe-6967-9d33-783b031f0f3c" data-testid="PARAGRAPH_SKLI_54297704-27fe-6967-9d33-783b031f0f3c" data-para-index="8">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Technical Skills">Blazor Server</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div></div><div id="CATEGORY_SKLI" class="category-parent">
+                <div id="CATEGORYHEADING_SKLI" class="category-heading">Delivery Practices</div>
+                
+            <div id="PARAGRAPH_SKLI" class="paragraph category-paragraph firstparagraph para_odd" data-para-id="0cc064cb-1515-ef6a-fa2d-529dba0e9b00" data-testid="PARAGRAPH_SKLI_0cc064cb-1515-ef6a-fa2d-529dba0e9b00" data-para-index="9">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Delivery Practices">Agile project management</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="d3c9d04e-8c48-5a83-dfbe-d1577a070ff2" data-testid="PARAGRAPH_SKLI_d3c9d04e-8c48-5a83-dfbe-d1577a070ff2" data-para-index="10">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Delivery Practices">Sprint planning</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="e99a714f-8499-09f0-42b8-532a4b36b5e9" data-testid="PARAGRAPH_SKLI_e99a714f-8499-09f0-42b8-532a4b36b5e9" data-para-index="11">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Delivery Practices">Code review</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="b65ecca6-9aa5-4f79-8c11-153c01e50bf4" data-testid="PARAGRAPH_SKLI_b65ecca6-9aa5-4f79-8c11-153c01e50bf4" data-para-index="12">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Delivery Practices">Requirements analysis</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="c431019d-f996-b9b3-fb75-d2f2a45ab3c0" data-testid="PARAGRAPH_SKLI_c431019d-f996-b9b3-fb75-d2f2a45ab3c0" data-para-index="13">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Delivery Practices">Troubleshooting</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div></div><div id="CATEGORY_SKLI" class="category-parent">
+                <div id="CATEGORYHEADING_SKLI" class="category-heading">Collaboration &amp; Ownership</div>
+                
+            <div id="PARAGRAPH_SKLI" class="paragraph category-paragraph firstparagraph para_odd" data-para-id="14208f62-7a6f-d98c-dc2d-d77e1c2b9f2e" data-testid="PARAGRAPH_SKLI_14208f62-7a6f-d98c-dc2d-d77e1c2b9f2e" data-para-index="14">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Collaboration &amp; Ownership">Cross-functional collaboration</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="de625436-fcb9-af86-79c2-fef4dca9f253" data-testid="PARAGRAPH_SKLI_de625436-fcb9-af86-79c2-fef4dca9f253" data-para-index="15">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Collaboration &amp; Ownership">Stakeholder communication</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="8579854e-c180-c1f9-75a8-fd9f801182ae" data-testid="PARAGRAPH_SKLI_8579854e-c180-c1f9-75a8-fd9f801182ae" data-para-index="16">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Collaboration &amp; Ownership">Mentoring</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_even" data-para-id="f705865b-6613-9af7-5f67-91230dea58bc" data-testid="PARAGRAPH_SKLI_f705865b-6613-9af7-5f67-91230dea58bc" data-para-index="17">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Collaboration &amp; Ownership">Technical documentation</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div><div id="PARAGRAPH_SKLI" class="paragraph category-paragraph para_odd" data-para-id="882254f3-d0cd-cf18-a8ab-bc2aa948a388" data-testid="PARAGRAPH_SKLI_882254f3-d0cd-cf18-a8ab-bc2aa948a388" data-para-index="18">
+                <div class="field">
+                    <span id="FIELD_SKC1"><p></p><ul><li data-catg="Collaboration &amp; Ownership">Issue triage</li></ul><p></p></span><span dependency="SKC1" class="coma-sptr">,</span>
+                </div>
+                </div></div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div><div id="SECTION_EXPR" class="section SECTION_EXPR multi-para" data-section-id="86b36299-912a-4bd1-bade-fc7806def145" data-section-type="EXPR" data-section-cd="EXPR" style="position: relative;">
+            <div class="heading">
+                <div class="sectiontitle" id="SECTIONNAME_EXPR">Work Experience<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+            </div>
+            
+            <div class="paragraph parlrColmn firstparagraph" id="PARAGRAPH_EXPR" data-para-id="9acb018d-c63e-4b07-a639-401ac96768d6" data-testid="PARAGRAPH_EXPR_9acb018d-c63e-4b07-a639-401ac96768d6" data-para-index="0">
+				<span class="dates_wrapper txtReglr" dependency="JSTD|EDDT|JCIT|JSTA|JCNT|JLOC">
+					<span class="paddedline">
+                        
+						<span class="jobdates" id="FIELD_JSTD" format="%b %Y">2022</span>
+						<span dependency="JSTD+EDDT"> - </span>
+						<span class="jobdates" id="FIELD_EDDT" format="%b %Y">Current</span>
+					</span>
+					<span class="paddedline">
+						<span class="joblocation jobcity" id="FIELD_JCIT"></span>
+                        <span class="joblocation jobstate" id="FIELD_JSTA"></span>
+                        <span class="joblocation jobcountry" id="FIELD_JCNT"></span><span class="joblocation" id="FIELD_JLOC">Rajkot, Gujarat</span>
+					</span>
+				</span>
+                <div class="singlecolumn">
+                    <span class="paddedline" dependency="JTIT" style="display: inline;">
+						<span class="jobtitle txtSmBld" id="FIELD_JTIT">.NET / Blazor / Angular Developer</span><span dependency="COMP|JSTA"> / </span><span class="companyname" id="FIELD_COMP">Connectus Infoway Pvt Ltd</span>
+                    </span>
+					<span class="jobline" id="FIELD_JDES"><ul><li>Develop <b>20+ REST API integrations per sprint</b> to support business logic and third-party platform communications.</li><li>Develop full-stack enterprise applications using C#, .NET Core, ASP.NET Core, Angular, Blazor Server, and SQL Server.</li><li>Implement role-based security with OAuth and JWT authentication across internal workflows and application access points.</li><li>Optimize database operations with Entity Framework Core, LINQ, stored procedures, and T-SQL for faster query performance.</li><li>Design and develop modular Angular components and responsive web interfaces for business workflows.</li><li>Streamline workflow automation while supporting Azure DevOps, troubleshooting, issue triage, and technical documentation efforts.</li></ul></span>
+                </div>
+            </div><div class="paragraph parlrColmn" id="PARAGRAPH_EXPR" data-para-id="c9c2e76e-7258-41db-b381-d85cbd62633c" data-testid="PARAGRAPH_EXPR_c9c2e76e-7258-41db-b381-d85cbd62633c" data-para-index="1">
+				<span class="dates_wrapper txtReglr" dependency="JSTD|EDDT|JCIT|JSTA|JCNT|JLOC">
+					<span class="paddedline">
+                        
+						<span class="jobdates" id="FIELD_JSTD" format="%b %Y">2020</span>
+						<span dependency="JSTD+EDDT"> - </span>
+						<span class="jobdates" id="FIELD_EDDT" format="%b %Y">2022</span>
+					</span>
+					<span class="paddedline">
+						<span class="joblocation jobcity" id="FIELD_JCIT"></span>
+                        <span class="joblocation jobstate" id="FIELD_JSTA"></span>
+                        <span class="joblocation jobcountry" id="FIELD_JCNT"></span><span class="joblocation" id="FIELD_JLOC">Jamnagar, Gujarat</span>
+					</span>
+				</span>
+                <div class="singlecolumn">
+                    <span class="paddedline" dependency="JTIT" style="display: inline;">
+						<span class="jobtitle txtSmBld" id="FIELD_JTIT">Junior .NET &amp; Angular Developer</span><span dependency="COMP|JSTA"> / </span><span class="companyname" id="FIELD_COMP">Mehta Websolutions</span>
+                    </span>
+					<span class="jobline" id="FIELD_JDES"><ul><li>Process <b>10+ support tickets weekly</b> by troubleshooting web application issues across .NET and Angular features.</li><li>Developed web applications and services using C#, .NET Framework, and Angular for front-end and back-end delivery.</li><li>Built custom data tables, administrative dashboards, and reporting features to support day-to-day application use.</li><li>Created CRUD workflows that improved data entry, editing, and record management across internal web modules.</li><li>Optimized SQL queries and Entity Framework code to improve data-layer efficiency and application performance.</li><li>Used TypeScript and ASP.NET Core to support feature delivery and keep front-end and back-end code aligned.</li></ul></span>
+                </div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div><div id="SECTION_EDUC" class="section SECTION_EDUC multi-para" data-section-id="8600d8ff-78cf-4d68-9a89-cff99e728160" data-section-type="EDUC" data-section-cd="EDUC" style="position: relative;">
+            <div class="heading">
+                <div class="sectiontitle" id="SECTIONNAME_EDUC">Education<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+            </div>
+            <div class="paragraph parlrColmn firstparagraph" id="PARAGRAPH_EDUC" data-para-id="43c8eace-9c83-465e-be92-a7bd80d4f32f" data-testid="PARAGRAPH_EDUC_43c8eace-9c83-465e-be92-a7bd80d4f32f" data-para-index="0">
+				<span class="dates_wrapper txtReglr">
+					<span class="paddedline">
+                        <span dependency="GRYR|GRST|GRED|GRIP">
+                            <span class="xslt_static_change displayNoneThisField">Expected in </span><span id="FIELD_GRYR" format="%b %Y">Mar 2018</span><span id="FIELD_GRST" format="%b %Y"></span>
+                            <span id="FIELD_GRED" format="%b %Y"></span>
+                            
+                            <span id="FIELD_GRIP"></span>
+                            </span>
+				    </span>
+                   	
+				</span>
+                <div class="singlecolumn">
+                    <span class="paddedline txtSmBld default-parent" dependency="SCGI|GRYR|STUY|DGRE" depcond="PPREF_MJMN == false||count(MAJOR_STUY)==0">
+                        <span class="degree" id="FIELD_DGRE">Bachelor of Computer Applications (BCA)</span><span dependency="DGRE+STUY"> in </span><span class="programline" id="FIELD_STUY">Computer Science</span>
+                    </span>
+                    
+					<span class="paddedline" dependency="SCHO">
+						<span class="companyname companyname_educ" id="FIELD_SCHO">Saurashtra University</span>
+                    </span>
+					
+                     
+                    <span id="FIELD_FRFM"><p>GPA: 6.99</p></span>
+                </div>
+            </div><div class="paragraph parlrColmn" id="PARAGRAPH_EDUC" data-para-id="43f8995c-c787-4435-b743-875e10a7dc02" data-testid="PARAGRAPH_EDUC_43f8995c-c787-4435-b743-875e10a7dc02" data-para-index="1">
+				<span class="dates_wrapper txtReglr">
+					<span class="paddedline">
+                        <span dependency="GRYR|GRST|GRED|GRIP">
+                            <span class="xslt_static_change displayNoneThisField">Expected in </span><span id="FIELD_GRYR" format="%b %Y">Mar 2015</span><span id="FIELD_GRST" format="%b %Y"></span>
+                            <span id="FIELD_GRED" format="%b %Y"></span>
+                            
+                            <span id="FIELD_GRIP"></span>
+                            </span>
+				    </span>
+                   	
+				</span>
+                <div class="singlecolumn">
+                    <span class="paddedline txtSmBld default-parent" dependency="SCGI|GRYR|STUY|DGRE" depcond="PPREF_MJMN == false||count(MAJOR_STUY)==0">
+                        <span class="degree" id="FIELD_DGRE">12th</span><span dependency="DGRE+STUY"> in </span><span class="programline" id="FIELD_STUY">Commerce</span>
+                    </span>
+                    
+					<span class="paddedline" dependency="SCHO">
+						<span class="companyname companyname_educ" id="FIELD_SCHO">Gujarat Secondary and Higher Secondary Education Board (GSEB)</span>
+                    </span>
+					
+                     
+                    <span id="FIELD_FRFM"><p>GPA: 67.67%</p></span>
+                </div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div><div id="SECTION_PROJ" class="section SECTION_PROJ" data-section-id="1f9c2d4c-241c-d1dd-a9c2-ae64fecc68f1" data-section-type="PROJ" data-section-cd="PROJ" style="position: relative;">
+            <div class="heading">
+                <div class="sectiontitle" id="SECTIONNAME_PROJ">SELECTED PROJECTS<button type="button" class="grp-rename-btn ds-link ds-link-default rename-section text-rename" title="Rename" style="position: relative; z-index: 10001; pointer-events: auto;">Rename</button></div>
+            </div>
+            <div class="paragraph firstparagraph" id="PARAGRAPH_PROJ" data-para-id="d0b1cf91-80bf-4387-b6fa-618339a79970" data-para-index="0">
+                <div class="singlecolumn" id="FIELD_FRFM"><p><strong>Raats Motorsports Platform</strong><br>
+<strong>Technologies:</strong> .NET 9, Angular 21, Entity Framework Core 10, REST APIs<br>
+Developed an operations management platform for tyre services, including quotation management, appointment scheduling, logistics coordination, workflow automation, and role-based access control (RBAC).</p>
+<p><strong>Villa Management ERP</strong><br>
+<strong>Technologies:</strong> Blazor Server, .NET 9, SQL Server, Flywire, Zoho CRM, REST APIs<br>
+Built ERP modules for property and reservation management, quotation generation, multi-currency payment processing, and third-party CRM and payment gateway integrations.</p>
+<p><strong>Prognosis Finance ERP</strong><br>
+<strong>Technologies:</strong> ASP.NET Core, C#, JavaScript, jQuery, SQL Server, Entity Framework Core, REST APIs, WhatsApp API<br>
+Migrated legacy desktop workflows to a web-based finance ERP system and developed business modules, API services, database functionality, and WhatsApp messaging integration.</p>
+<p><strong>Horizon Health Insurance Platform</strong><br>
+<strong>Technologies:</strong> ASP.NET Core 5, Angular 13+, SQL Server, REST APIs<br>
+Developed and maintained modules for underwriting, pharmacy benefit management (PBM), claims processing, sales operations, and financial operations.</p>
+<p><strong>Law Management System</strong><br>
+<strong>Technologies:</strong> .NET 10, ASP.NET MVC, C#, SQL Server, Bootstrap, Reporting<br>
+Developed a legal case-management system supporting case tracking, parties, hearings, court orders, document management, advocate management, fee management, payment processing, and configurable reports.</p>
+<p><strong>Matrimonial Platform — Mehta Websolutions</strong><br>
+<strong>Technologies:</strong> .NET Framework 4.8, ASP.NET MVC, C#, Entity Framework, jQuery, REST APIs<br>
+Developed responsive web UI, backend APIs, CRUD operations, user profile management, partner preferences, and core business workflows for a matrimonial platform.</p>
+<p><strong>Matrimonial Mobile Application — Mehta Websolutions</strong><br>
+<strong>Technologies:</strong> Ionic, Angular 13, .NET Framework 4.8, C#, REST APIs, SignalR, OneSignal<br>
+Developed cross-platform mobile application features, integrated RESTful .NET APIs, implemented real-time chat with SignalR, and configured push notifications using OneSignal.</p></div>
+            </div>
+        <div class="grp-section-overlay"></div><div class="grp-action-bar"><button type="button" class="grp-action-btn grp-edit-btn" title="View / Edit"><i data-testid="{`embd-Fi8ewuGX`}" class="icon-edit"></i></button><button type="button" class="grp-action-btn grp-delete-btn" title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><rect x="5" y="6" width="14" height="16" rx="2"></rect><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button></div><div class="btn-icon-reorder-wrapper"><button type="button" class="btn-icon-tertiary btn-icon-reorder" title="Section order"><i data-testid="{`embd-y8pyU1Xv`}" class="icon-reorder"></i></button></div></div></div></div></div>
